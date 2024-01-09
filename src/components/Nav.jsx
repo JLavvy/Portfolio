@@ -1,16 +1,29 @@
-import React, {useState} from 'react';
-import { Link , NavLink} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 import "./Nav.css";
 
 
 export const Nav = () => {
 
   const [menuOpen, setMenuOpen] =useState(false)
-  return <nav>
+  const [scrollNav, setScrollNav] = useState(false);
 
-    <Link to="/" className="title">
-      My Portfolio
-    </Link>.
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 100) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+ };
+
+ useEffect(() => {
+    window.addEventListener('scroll', changeNavbarColor);
+ }, []);
+
+  return    <nav className={scrollNav ? 'nav-scroll' : ''}>
+
+    <a className="title">
+   
+      Portfolio</a>
     <div className='menu' onClick={() => {
       setMenuOpen(!menuOpen);
     }}
@@ -23,19 +36,19 @@ export const Nav = () => {
 
     <ul className={menuOpen ? "open" : ""}>
       <li>
-        <NavLink to="/">Home</NavLink>
+      <a href='/'>Home</a>
       </li>
 
       <li>
-      <NavLink to="/about">About</NavLink>
+      <a href='#about'>About</a>
       </li>
 
       <li>
-      <NavLink to="/services">Services</NavLink>
+      <a href='#projects'>Projects</a>
       </li>
 
       <li>
-      <NavLink to="/contact">Contact</NavLink>
+      <a href='#contact'>Contact</a>
       </li>
 
     </ul>
