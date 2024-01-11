@@ -46,6 +46,22 @@
     transition: background-color 0.3s;
 }
 
+.social-icons {
+  display: flex;
+}
+
+.icon {
+  font-size: 2rem;
+  margin: 0.5rem;
+  color: #333; /* Adjust the color as needed */
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #007bff; /* Change to the desired hover color */
+}
+
+
 /* Media Queries for Responsive Design */
 
 /* For screens smaller than 768px */

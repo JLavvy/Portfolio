@@ -1,6 +1,6 @@
 
 import React from 'react'
-import {FaGraduationCap, FaRegClock} from 'react-icons/fa'
+import {FaGraduationCap, FaRegClock, FaHtml5, FaCss3, FaJs, FaReact} from 'react-icons/fa'
 import "./About.css"
 
 export const About = () => {
@@ -30,11 +30,33 @@ export const About = () => {
 
           </div>
           <div className="text-container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore omnis sapiente hic odio quod voluptates alias nobis excepturi perspiciatis natus voluptatem exercitationem voluptas quibusdam deserunt impedit libero rerum adipisci, quos nisi velit sunt! Quibusdam magni laborum perspiciatis, eaque quos nobis?</p>
-          </div>
+            <p>I'm a recent Computer Science graduate with a passion for crafting engaging and user-friendly front-end experiences for websites and web applications. My journey in web development has equipped me with a solid foundation and a zest for creating seamless, impactful user interfaces.
+            Explore some of my recent projects in the Projects section to get a glimpse of my skills and dedication. Each project is a step towards contributing to the success of the overall product.
+            Beyond coding, I enjoy sharing insights and knowledge I've gained throughout my journey in web development. Let's connect and learn from each other!
+            I'm currently seeking exciting job opportunities where I can apply my skills, continue learning, and contribute to meaningful projects. If you have an opportunity that aligns with my passion and skills, feel free to reach out. I'm eager to embark on the next phase of my career journey. 🚀</p>
+            </div>
         </div>
        
       </div>
+
+      <div>
+      <h2>Tech Stack</h2>
+      <p className='stack-text'>Explore the technologies I work with:</p>
+      <div className="tech-stack">
+        <div className="tech-icon" id="html">
+          <FaHtml5 />
+        </div>
+        <div className="tech-icon" id="css">
+          <FaCss3 />
+        </div>
+        <div className="tech-icon" id="javascript">
+          <FaJs />
+        </div>
+        <div className="tech-icon" id="react">
+          <FaReact />
+        </div>
+      </div>
+    </div>
      
     </section>
   )
