@@ -41,15 +41,15 @@ export const Nav = () => {
       </li>
 
       <li>
-      <a href='/About'>About</a>
+      <a href='#about'>About</a>
       </li>
 
       <li>
-      <a href='#Projects'>Projects</a>
+      <a href='#projects'>Projects</a>
       </li>
 
       <li>
-      <a href='#Contact'>Contact</a>
+      <a href='#contact'>Contact</a>
       </li>
 
     </ul>

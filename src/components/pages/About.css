@@ -1,4 +1,4 @@
-.about {
+#about {
     flex-direction: column;
 }
 
@@ -16,7 +16,6 @@
     display: flex;
     gap: 4rem;
     height: 100%;
-    position: relative; 
     z-index: 1; 
 }
 
@@ -30,6 +29,7 @@
     width: 35rem;
     height: 30rem;
     border-radius: 3rem;
+    z-index: 1; 
 }
 
 .about-container-details {

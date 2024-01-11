@@ -1,24 +1,24 @@
-/* Default styles */
 
 #intro {
-    height: 70vh;
+    height: 90vh;
     width: 100vw;
     max-width: 100rem;
     overflow: hidden;
     background-image: url('../../assets/background.jpeg');
     background-size: cover;
+    margin-top: 0 0;
 }
 
 .introContent {
     height: 100vh;
     width: 100vw;
     padding: 2.5rem;
-    margin-left: 15rem;
+    margin-left: 10rem;
     font-size: 2rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
-    margin-top: 3.5rem;
+    margin-top: 9.5rem;
 }
 
 .hello {
@@ -28,11 +28,13 @@
 
 .introname {
     color: aqua;
+    z-index: 1; 
 }
 
 .intropara {
     font-size: 0.9rem;
     font-weight: 100;
+    z-index: 1; 
 }
 
 .btn {
