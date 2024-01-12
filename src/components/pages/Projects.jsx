@@ -1,12 +1,75 @@
 import React from 'react'
+import "./Projects.css";
 
 export const Projects = () => {
   return (
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsam facere voluptate, natus explicabo quia quam minus, voluptatem repellendus odio provident! Ipsa, facere eveniet, eius inventore architecto id nesciunt, alias commodi velit in sunt magnam dolorum atque placeat asperiores voluptatum? Recusandae atque at quo quos velit perspiciatis officia libero doloremque harum pariatur? Rerum omnis nulla, a ullam temporibus doloremque totam molestias labore voluptates corporis impedit nobis error commodi dicta atque tempora repellendus iste quisquam quidem! Ad animi illum dicta fugit ipsum delectus veniam beatae neque incidunt ratione! Dolor a exercitationem vitae aut repellendus ab sapiente, illum molestiae aliquid nulla id.
-<br />
-<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ipsam facere voluptate, natus explicabo quia quam minus, voluptatem repellendus odio provident! Ipsa, facere eveniet, eius inventore architecto id nesciunt, alias commodi velit in sunt magnam dolorum atque placeat asperiores voluptatum? Recusandae atque at quo quos velit perspiciatis officia libero doloremque harum pariatur? Rerum omnis nulla, a ullam temporibus doloremque totam molestias labore voluptates corporis impedit nobis error commodi dicta atque tempora repellendus iste quisquam quidem! Ad animi illum dicta fugit ipsum delectus veniam beatae neque incidunt ratione! Dolor a exercitationem vitae aut repellendus ab sapiente, illum molestiae aliquid nulla id.</div>
-    </div>
+    <section id='projects'>
+      <h1 className="projects-title">Projects</h1>
+      <br />
     
+      <div class="wrapper">
+        <div class="card" ontouchstart="this.classList.toggle('hover');">
+          <br />
+          <div class="container">
+            <div class="front" >
+              <div class="inner">
+              <p>Coming soon</p>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, sit!</span>
+              </div>
+            </div>
+            <div class="back">
+            <div class="inner">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+            </div>
+          </div>
+
+          
+          </div>
+        </div>
+
+        <div class="card" ontouchstart="this.classList.toggle('hover');">
+          <br />
+          <div class="container">
+            <div class="front" >
+              <div class="inner">
+              <p>Coming soon</p>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, sit!</span>
+              </div>
+            </div>
+            <div class="back">
+            <div class="inner">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+            </div>
+          </div>
+
+          
+          </div>
+        </div>
+
+        <div class="card" ontouchstart="this.classList.toggle('hover');">
+          <br />
+          <div class="container">
+            <div class="front" >
+              <div class="inner">
+              <p>Coming soon</p>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum, sit!</span>
+              </div>
+            </div>
+            <div class="back">
+            <div class="inner">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+            </div>
+          </div>
+
+          
+          </div>
+        </div>
+
+
+        
+      </div>
+     
+    </section>
 
   )
 }
