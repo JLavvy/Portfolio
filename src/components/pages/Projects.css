@@ -68,7 +68,7 @@
   
   .container:hover .front,
 .container:hover .back {
-  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 1.2s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
   .front{
