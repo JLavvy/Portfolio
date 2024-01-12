@@ -1,4 +1,4 @@
-/* Base styles for larger screens */
+
 #about {
     flex-direction: column;
 }
@@ -69,10 +69,15 @@
     height: auto;
 }
 
-h2 {
+.skills{
+    display: block;
+}
+.skills h2 {
     text-align: center;
     color: black;
     font-size: 2rem;
+    margin-top: 7rem;
+  
 }
 
 .stack-text {
@@ -115,6 +120,7 @@ h2 {
     .about-pic {
         width: 100%;
         height: auto;
+        margin-left: 5rem;
     }
 
     .details-container {

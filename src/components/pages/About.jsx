@@ -39,7 +39,7 @@ export const About = () => {
        
       </div>
 
-      <div>
+      <div className='skills'>
       <h2>Tech Stack</h2>
       <p className='stack-text'>Explore the technologies I work with:</p>
       <div className="tech-stack">
