@@ -1,162 +1,161 @@
 * {
-    box-sizing: border-box;
-  }
-  
-
-  .wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
-    width: 180vh;
-    border-radius: 1rem;
-    border: rgb(53, 53, 53) 0.1rem ;
-    border-color: rgb(163, 163, 163);
-    margin-left: 6rem;
-  }
-
-  .projects-title {
-    font-size: 3rem;
-    text-align: center;
-    z-index: 1; 
+  box-sizing: border-box;
 }
-  
-  .card {
-    width: calc(25% - 2rem);
-    margin: 1rem;
-    cursor: pointer;
-  }
-  
-  .container {
-    transform-style: preserve-3d;
-    perspective: 1000px;
-  }
-  
-  .front,
-  .back {
-    background-size: cover;
-    background: cover center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    min-height: 280px;
-    height: auto;
-    color: #fff;
-    font-size: 1.5rem;
-    background-position: center;
-    transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    backface-visibility: hidden;
-    text-align: center;
-  }  
-  
-  .back {
-    background: linear-gradient(45deg, #055795 0%, #596a72 100%);
-  }
-  
-  
-  .front::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    background-color: #000;
-    border-radius: 10px;
-  }
-  
-  .container:hover .front,
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  width: 180vh;
+  border-radius: 1rem;
+  border: rgb(53, 53, 53) 0.1rem;
+  border-color: rgb(163, 163, 163);
+  margin-left: 6rem;
+  z-index: -1;
+}
+
+.projects-title {
+  font-size: 3rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.card {
+  width: calc(25% - 2rem);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.container {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  z-index: -1;
+}
+
+.front,
+.back {
+  background-size: cover;
+  background: cover center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  min-height: 280px;
+  height: auto;
+  color: #fff;
+  font-size: 1.5rem;
+  background-position: center;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+  backface-visibility: hidden;
+  text-align: center;
+}
+
+.back {
+  background: linear-gradient(45deg, #055795 0%, #596a72 100%);
+}
+
+.front::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+.container:hover .front,
 .container:hover .back {
   transition: transform 1.2s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
-  .front{
-    background-image: url('../../assets/Logo 2.png');
-    
+.front {
+  background-image: url("../../assets/Logo 2.png");
+}
 
-  }
-  
-  .back{
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-  }
-  
-  .inner {
-    transform: translateY(-50%) translateZ(60px) scale(0.94);
-    top: 50%;
-    position: absolute;
-    left: 0;
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.inner {
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  outline: 1px solid transparent;
+  perspective: inherit;
+  z-index: 2;
+}
+
+.container .back,
+.container:hover .front {
+  transform: rotateY(180deg);
+  transform-style: preserve-3d;
+}
+
+.container .front,
+.container:hover .back {
+  transform: rotateY(0deg);
+  transform-style: preserve-3d;
+}
+
+.front .inner p {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.front .inner p:after {
+  content: "";
+  width: 4rem;
+  height: 2px;
+  position: absolute;
+  background: #c6d4df;
+  display: block;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -0.75rem;
+}
+
+.front .inner span {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Montserrat";
+  font-weight: 300;
+}
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrapper {
     width: 100%;
-    padding: 2rem;
-    box-sizing: border-box;
-    outline: 1px solid transparent;
-    perspective: inherit;
-    z-index: 2;
-  }
-  
-  
-  .container .back,
-  .container:hover .front {
-    transform: rotateY(180deg);
-    transform-style: preserve-3d;
-  }
-  
-  .container .front,
-  .container:hover .back {
-    transform: rotateY(0deg);
-    transform-style: preserve-3d;
-  }
-  
-  
-  .front .inner p{
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    position: relative;
-  }
-  
-  .front .inner p:after{
-    content: '';
-    width: 4rem;
-    height: 2px;
-    position: absolute;
-    background: #C6D4DF;
-    display: block;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    bottom: -.75rem;
-  }
-  
-  .front .inner span{
-    color: rgba(255,255,255,0.7);
-    font-family: 'Montserrat';
-    font-weight: 300;
+    margin-left: 0;
   }
 
+  .card {
+    width: calc(33.33% - 2rem);
+  }
+}
 
+@media only screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - 2rem);
+  }
+}
 
-  @media only screen and (max-width: 1200px) {
-    .wrapper {
-      width: 100%;
-      margin-left: 0;
-    }
-  
-    .card {
-      width: calc(33.33% - 2rem);
-    }
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 100%;
   }
-  
-  @media only screen and (max-width: 768px) {
-    .card {
-      width: calc(50% - 2rem);
-    }
-  }
-  
-  @media only screen and (max-width: 480px) {
-    .card {
-      width: 100%;
-    }
-  }
+}

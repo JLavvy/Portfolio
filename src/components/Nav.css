@@ -1,4 +1,3 @@
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -8,34 +7,35 @@ nav {
     margin: 0 auto;
     margin-left: 0 auto;
     width: 100%;
-}
-
-nav.nav-scroll {
-    background-color: rgba(255, 255, 255, 0.9);
-}
-
-nav .title {
+    transition: background-color 0.3s ease;
+  }
+  
+  nav.nav-scroll {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the RGB values as needed */
+  }
+  
+  nav .title {
     font-size: 2rem;
     margin: 0.5rem;
     font-weight: bold;
     text-decoration: none;
     color: black;
     opacity: 1;
-}
+  }
 
-nav ul {
+  nav ul {
     display: flex;
-}
-
-nav ul li {
+  }
+  nav ul li{
     list-style: none;
+
 }
 
-nav ul li:hover {
+nav ul li :hover{
     color: aquamarine;
     text-decoration: none;
-}
-
+    
+    }
 nav ul li a {
     color: black;
     display: block;
@@ -43,9 +43,9 @@ nav ul li a {
     padding: 1rem;
     margin: 0 1rem;
     border-radius: 0.5rem;
+    ;
 }
-
-nav .menu {
+nav .menu{
     display: none;
     position: absolute;
     top: 0.75rem;
@@ -55,41 +55,68 @@ nav .menu {
     width: 2.25rem;
     height: 2rem;
 }
-
-nav .menu span {
+nav .menu span{
     height: 0.1rem;
     width: 100%;
     background-color: black;
     border-radius: 0.6rem;
 }
 
-/* Media query for smaller screens */
-@media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
-    }
+/* Tablets and smaller screens */
 
-    nav .menu {
-        display: flex;
-    }
-
-    nav ul {
+@media (max-width: 768px) {
+    nav ul{
         display: none;
         flex-direction: column;
         width: 100%;
-        position: absolute;
-        top: 4rem;
-        left: 0;
-        background-color: rgba(255, 255, 255, 0.9);
+        margin-bottom: 0.30rem;
     }
 
-    nav ul.show {
+    nav ul.open{
         display: flex;
     }
 
     nav ul li {
-        margin: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a{
+        margin: 0.3rem 0.6rem;
     }
 }
+
+/* Mobile screens */
+
+@media (max-width: 480px) {
+    nav .menu{
+        display: flex;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.30rem;
+    }
+
+    nav ul.open{
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a{
+        margin: 0.3rem 0.6rem;
+    }
+
+} 
+  

@@ -49,10 +49,9 @@ export const Nav = () => {
       </li>
 
       <li>
-      <a href='#contact'>Contact</a>
+      <a href='/'>Contact</a>
       </li>
 
     </ul>
   </nav>
 }
-

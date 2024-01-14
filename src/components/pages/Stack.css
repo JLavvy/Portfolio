@@ -1,0 +1,35 @@
+.stack-text {
+    text-align: center;
+    color: black;
+    margin-bottom: 2.5rem;
+}
+
+.tech-stack {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .tech-icon {
+    width: 10rem; 
+    height: 6rem; 
+    margin: 0.5rem;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .tech-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .tech-icon:hover {
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 0.75rem rgba(0, 255, 255, 0.8));
+  }
+  @media screen and (max-width: 768px) {
+   
+    .tech-stack {
+        flex-direction: column;
+        align-items: center;
+    }
+}
