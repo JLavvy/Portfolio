@@ -1,17 +1,14 @@
 
 #intro {
-    height: 90vh;
-    width: 100vw;
-    max-width: 100rem;
+   
     overflow: hidden;
     background-image: url('../../assets/background.jpeg');
     background-size: cover;
-    margin-top: 0 0;
+
 }
 
 .introContent {
     height: 100vh;
-    width: 100vw;
     padding: 2.5rem;
     margin-left: 10rem;
     font-size: 2rem;
@@ -34,7 +31,7 @@
 .intropara {
     font-size: 0.9rem;
     font-weight: 100;
-    z-index: 1; 
+    
 }
 
 .btn {
@@ -53,31 +50,31 @@
 .icon {
   font-size: 2rem;
   margin: 0.5rem;
-  color: #333; /* Adjust the color as needed */
+  color: #333; 
   transition: color 0.3s ease;
 }
 
 .icon:hover {
-  color: #007bff; /* Change to the desired hover color */
+  color: #007bff; 
 }
 
-
-/* Media Queries for Responsive Design */
 
 /* For screens smaller than 768px */
 @media only screen and (max-width: 768px) {
     .introContent {
         margin-left: 2rem;
-        margin-top: 8rem;
+        margin-top: 6rem;
+     
     }
     .hello {
         font-size: 1.2rem;
     }
 
     .intropara {
-        font-size: 1rem;
+        font-size: 0.8rem;
+        line-height: 1.2; 
+        margin-top: 1rem; 
     }
-
     .btn {
         padding: 0.5rem 1.5rem;
     }
@@ -86,7 +83,7 @@
 /* For screens smaller than 480px */
 @media only screen and (max-width: 480px) {
     .introContent {
-        margin-left: 1rem;
+        margin-left: 0.1rem;
         font-size: 1.5rem;
     }
     .hello {

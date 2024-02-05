@@ -1,3 +1,5 @@
+/* Nav.css */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -5,13 +7,12 @@ nav {
     position: fixed;
     top: 0;
     margin: 0 auto;
-    margin-left: 0 auto;
-    width: 100%;
+    width: 100vw;
     transition: background-color 0.3s ease;
   }
   
   nav.nav-scroll {
-    background-color: rgba(255, 255, 255, 0.8); /* Adjust the RGB values as needed */
+    background-color: rgba(255, 255, 255, 0.8);
   }
   
   nav .title {
@@ -22,30 +23,8 @@ nav {
     color: black;
     opacity: 1;
   }
-
-  nav ul {
-    display: flex;
-  }
-  nav ul li{
-    list-style: none;
-
-}
-
-nav ul li :hover{
-    color: aquamarine;
-    text-decoration: none;
-    
-    }
-nav ul li a {
-    color: black;
-    display: block;
-    text-decoration: none;
-    padding: 1rem;
-    margin: 0 1rem;
-    border-radius: 0.5rem;
-    ;
-}
-nav .menu{
+  
+  nav .menu {
     display: none;
     position: absolute;
     top: 0.75rem;
@@ -54,69 +33,74 @@ nav .menu{
     justify-content: space-between;
     width: 2.25rem;
     height: 2rem;
-}
-nav .menu span{
+  }
+  
+  nav .menu span {
     height: 0.1rem;
     width: 100%;
     background-color: black;
     border-radius: 0.6rem;
-}
-
-/* Tablets and smaller screens */
-
-@media (max-width: 768px) {
-    nav ul{
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+  }
+  
+  nav ul li a:hover {
+    color: aquamarine;
+    text-decoration: none;
+  }
+  
+ 
+  
+  @media (max-width: 768px) {
+    nav .menu {
+      display: flex;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    nav ul {
         display: none;
         flex-direction: column;
-        width: 100%;
+        width: auto; 
         margin-bottom: 0.30rem;
-    }
-
-    nav ul.open{
+        position: absolute;
+        top: 2.3rem;
+        right: 2rem; 
+        background-color: rgba(228, 234, 234, 0.8);
+        border-radius: 0.5rem;
+      }
+    
+      nav ul.open {
         display: flex;
-    }
-
-    nav ul li {
-        width: 100%;
+        width: 20%; 
+      }
+    
+      nav ul li {
+        width: 70%;
         text-align: center;
-    }
-
-    nav ul li a{
+      }
+    
+      nav ul li a {
         margin: 0.3rem 0.6rem;
-    }
-}
-
-/* Mobile screens */
-
-@media (max-width: 480px) {
-    nav .menu{
-        display: flex;
-    }
-
-    nav{
-        flex-direction: column;
-        align-items: start;
-    }
-
-    nav ul{
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 0.30rem;
-    }
-
-    nav ul.open{
-        display: flex;
-    }
-
-    nav ul li {
-        width: 100%;
-        text-align: center;
-    }
-
-    nav ul li a{
-        margin: 0.3rem 0.6rem;
-    }
-
-} 
+        border-radius: 0;
+      }
+  }
   

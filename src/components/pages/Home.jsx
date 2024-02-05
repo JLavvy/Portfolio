@@ -10,13 +10,13 @@ export const Home = () => {
         <span className="hello">Hello, </span>
         <span className="introtext">
       I'm 
-      <Fade direction="right" triggerOnce>
+      <Fade direction="right" triggerOnce cascade>
         <span className="introname"> Janice Lavoga </span>
       </Fade>
       A Junior Front End Developer
     </span>
 
-    <Fade direction="left" triggerOnce>
+    <Fade direction="left" triggerOnce cascade>
         <p className="intropara">
           👋 Hey there, I'm a Junior Front End Developer with a strong foundation in HTML, CSS, and JavaScript.
           I'm enthusiastic about creating user-friendly web experiences

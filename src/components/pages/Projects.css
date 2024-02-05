@@ -1,17 +1,15 @@
-* {
-  box-sizing: border-box;
-}
+
 
 .wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   background-color: rgb(255, 255, 255);
-  width: 180vh;
+  width: 100vw;
   border-radius: 1rem;
   border: rgb(53, 53, 53) 0.1rem;
   border-color: rgb(163, 163, 163);
-  margin-left: 6rem;
+  margin-left: 2rem;
   z-index: -1;
 }
 
@@ -25,6 +23,7 @@
   width: calc(25% - 2rem);
   margin: 1rem;
   cursor: pointer;
+
 }
 
 .container {
@@ -68,7 +67,7 @@
 
 .container:hover .front,
 .container:hover .back {
-  transition: transform 1.2s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 1.0s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
 .front {
