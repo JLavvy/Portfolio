@@ -3,7 +3,16 @@
     color: black;
     margin-bottom: 2.5rem;
 }
+.skills{
+  display: block;
+}
+.skills h2 {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  margin-top: 2rem;
 
+}
 .tech-stack {
     display: flex;
     justify-content: center;
