@@ -3,10 +3,12 @@
     color: #fff;
     padding: 1px;
     text-align: center;
+    display: block;
+    left: 0;
+    width: 100%;
   
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
     .footer {
       font-size: 14px;

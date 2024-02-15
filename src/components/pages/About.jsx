@@ -3,7 +3,13 @@ import { FaGraduationCap, FaRegClock } from 'react-icons/fa';
 import './About.css';
 
 export const About = () => {
+  const downloadCV = () => {
+    
+    const cvFilePath = 'src/assets/Curriculum Vitae.pdf';
 
+    // Open the CV in a new tab
+    window.open(cvFilePath, '_blank');
+  };
 
   return (
     <section id='about'>
@@ -23,9 +29,9 @@ export const About = () => {
         <div className="about-container-details">
           <div className="about-containers">
             <div className="details-container">
-              <FaRegClock className="icon" onClick={Location} />
+              <FaRegClock className="icon" />
               <h3>Experience</h3>
-              <p>2+ years <br /> FrontEnd Development</p>
+              <p>2 years <br /> FrontEnd Development</p>
             </div>
 
             <div className="details-container">
@@ -37,9 +43,12 @@ export const About = () => {
 
           <div className="text-container">
             <p>
-              I'm a recent Computer Science graduate with a passion for crafting engaging and user-friendly front-end experiences for websites and web applications. My journey in web development has equipped me with a solid foundation and a zest for creating seamless, impactful user interfaces. Explore some of my recent projects in the Projects section to get a glimpse of my skills and dedication. Each project is a step towards contributing to the success of the overall product. Beyond coding, I enjoy sharing insights and knowledge I've gained throughout my journey in web development. Let's connect and learn from each other! I'm currently seeking exciting job opportunities where I can apply my skills, continue learning, and contribute to meaningful projects. If you have an opportunity that aligns with my passion and skills, feel free to reach out. I'm eager to embark on the next phase of my career journey. 🚀
+              I'm a recent Computer Science graduate with a passion for crafting engaging and user-friendly front-end experiences for websites and web applications. My journey in web development has equipped me with a solid foundation and a zest for creating seamless, impactful user interfaces. Explore some of my recent projects in the Projects section to get a glimpse of my skills and dedication. Each project is a step towards contributing to the success of the overall product. Beyond coding, I enjoy sharing insights and knowledge I've gained throughout my journey in web development. Let's connect and learn from each other!
             </p>
-            
+            <div className='button' onClick={downloadCV}>
+              Open CV
+            </div>
+
           </div>
         </div>
       </div>

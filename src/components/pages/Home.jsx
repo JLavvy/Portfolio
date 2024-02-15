@@ -11,7 +11,7 @@ export const Home = () => {
         <span className="introtext">
       I'm 
       <Fade direction="right" triggerOnce cascade>
-        <span className="introname"> Janice Lavoga </span>
+        <span className="introname"> Janice Lavoga Omoke</span>
       </Fade>
       A Junior Front End Developer
     </span>
@@ -24,7 +24,7 @@ export const Home = () => {
         </p>
     </Fade>
       
-        <a href="https://wa.me/+254772750018" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/+254741196477" target="_blank" rel="noopener noreferrer">
         <button className='btn'>Contact Me</button>
       </a>
       
@@ -37,7 +37,7 @@ export const Home = () => {
       <a href="https://twitter.com/JLavoga" target="_blank" rel="noopener noreferrer">
         <FaTwitter className="icon" />
       </a>
-      <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/janice-lavoga-929805223" target="_blank" rel="noopener noreferrer">
         <FaLinkedin className="icon" />
       </a>
       <a href="mailto:lavogajanyce@gmail.com" target="_blank" rel="noopener noreferrer">

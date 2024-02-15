@@ -13,18 +13,18 @@ export const Projects = () => {
           <div class="container">
             <div class="front" >
               <div class="inner">
-                <p>Coming soon</p>
+                <p>Kisuya and Weyombo Advocates Website</p>
               </div>
             </div>
             <div class="back">
               <div class="inner">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+                <p>This project represents a collaborative effort to create a law firm website using HTML, CSS and JavaScript.(Incomplete)</p>
 
                 <div class="buttons-container">
-                  <a href="" target="_blank" rel="noopener noreferrer">
+                  <a href="https://kisuyaandweyombo-trial.netlify.app/" target="_blank" rel="noopener noreferrer">
                     <button className='btn'>Demo</button>
                   </a>
-                  <a href="https://github.com/JLavvy/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/JoseMbilwa/Kisuyaandweyombo" target="_blank" rel="noopener noreferrer">
                     <button className='btn'>Code</button>
                   </a>
                 </div>
@@ -38,21 +38,21 @@ export const Projects = () => {
         <div class="card" ontouchstart="this.classList.toggle('hover');">
           <br />
           <div class="container">
-            <div class="front" >
-              <div class="inner">
-                <p>Coming soon</p>
+            <div class="front-2" >
+              <div class="inner-2">
+                <p>Compass Track Mentors Website</p>
               </div>
             </div>
-            <div class="back">
-              <div class="inner">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
+            <div class="back-2">
+              <div class="inner-2">
+                <p>This project represents a collaborative effort to revamp an NGO website using HTML, CSS and JavaScript.</p>
 
 
                 <div class="buttons-container">
-                  <a href="" target="_blank" rel="noopener noreferrer">
+                  <a href="https://compasstrackmentors.org/" target="_blank" rel="noopener noreferrer">
                     <button className='btn'>Demo</button>
                   </a>
-                  <a href="https://github.com/JLavvy/" target="_blank" rel="noopener noreferrer">
+                  <a href="https://github.com/JoseMbilwa/CT-Mentors" target="_blank" rel="noopener noreferrer">
                     <button className='btn'>Code</button>
                   </a>
                 </div>
@@ -67,20 +67,20 @@ export const Projects = () => {
         <div class="card" ontouchstart="this.classList.toggle('hover');">
           <br />
           <div class="container">
-            <div class="front" >
-              <div class="inner">
+            <div class="front-3" >
+              <div class="inner-3">
                 <p>Coming soon</p>
               </div>
             </div>
-            <div class="back">
-              <div class="inner">
+            <div class="back-3">
+              <div class="inner-3">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias cum repellat velit quae suscipit c.</p>
 
                 <div class="buttons-container">
                   <a href="" target="_blank" rel="noopener noreferrer">
                     <button className='btn'>Demo</button>
                   </a>
-                  <a href="https://github.com/JLavvy/" target="_blank" rel="noopener noreferrer">
+                  <a href="" target="_blank" rel="noopener noreferrer">
                     <button className='btn'>Code</button>
                   </a>
                 </div>

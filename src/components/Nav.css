@@ -7,21 +7,13 @@ nav {
     position: fixed;
     top: 0;
     margin: 0 auto;
-    width: 100vw;
+    width: 100%;
     transition: background-color 0.3s ease;
+    z-index: 1;
   }
   
   nav.nav-scroll {
     background-color: rgba(255, 255, 255, 0.8);
-  }
-  
-  nav .title {
-    font-size: 2rem;
-    margin: 0.5rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-    opacity: 1;
   }
   
   nav .menu {
@@ -60,11 +52,13 @@ nav {
   }
   
   nav ul li a:hover {
-    color: aquamarine;
+    color: rgba(0, 255, 255, 0.8);
     text-decoration: none;
   }
   
- 
+  .logo {
+    max-width: 100px; 
+  }
   
   @media (max-width: 768px) {
     nav .menu {
@@ -86,20 +80,16 @@ nav {
         right: 2rem; 
         background-color: rgba(228, 234, 234, 0.8);
         border-radius: 0.5rem;
+        
       }
     
       nav ul.open {
         display: flex;
-        width: 20%; 
-      }
-    
-      nav ul li {
-        width: 70%;
-        text-align: center;
+        width: 25%; 
       }
     
       nav ul li a {
-        margin: 0.3rem 0.6rem;
+        margin: 0.3rem 0.2rem;
         border-radius: 0;
       }
   }

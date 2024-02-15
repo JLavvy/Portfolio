@@ -4,11 +4,12 @@
     overflow: hidden;
     background-image: url('../../assets/background.jpeg');
     background-size: cover;
+    top: 0;
 
 }
 
 .introContent {
-    height: 100vh;
+    height: 70vh;
     padding: 2.5rem;
     margin-left: 10rem;
     font-size: 2rem;
@@ -16,6 +17,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 9.5rem;
+    
 }
 
 .hello {
@@ -24,8 +26,8 @@
 }
 
 .introname {
-    color: aqua;
-    z-index: 1; 
+    color: rgba(0, 255, 255, 0.8);
+    
 }
 
 .intropara {
@@ -55,7 +57,7 @@
 }
 
 .icon:hover {
-  color: #007bff; 
+  color: rgba(0, 255, 255, 0.8); 
 }
 
 

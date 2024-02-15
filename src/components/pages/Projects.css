@@ -5,22 +5,22 @@
   flex-flow: row wrap;
   justify-content: center;
   background-color: rgb(255, 255, 255);
-  width: 100vw;
+  width: 90%;
   border-radius: 1rem;
   border: rgb(53, 53, 53) 0.1rem;
   border-color: rgb(163, 163, 163);
-  margin-left: 2rem;
-  z-index: -1;
+  margin-left: 4rem;
+  position: relative;
 }
 
 .projects-title {
   font-size: 3rem;
   text-align: center;
-  z-index: 1;
+  
 }
 
 .card {
-  width: calc(25% - 2rem);
+  width: calc(40% - 5rem);
   margin: 1rem;
   cursor: pointer;
 
@@ -32,8 +32,13 @@
   z-index: -1;
 }
 
+
 .front,
-.back {
+.front-2,
+.front-3,
+.back,
+.back-2,
+.back-3 {
   background-size: cover;
   background: cover center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25);
@@ -48,11 +53,15 @@
   text-align: center;
 }
 
-.back {
-  background: linear-gradient(45deg, #055795 0%, #596a72 100%);
+.back,
+.back-2,
+.back-3 {
+  background: linear-gradient(45deg, #000000 0%, rgba(0, 255, 255, 0.8)100%);
 }
 
-.front::after {
+.front::after,
+.front-2::after,
+.front-3::after{
   content: "";
   position: absolute;
   top: 0;
@@ -66,22 +75,40 @@
 }
 
 .container:hover .front,
-.container:hover .back {
+.container:hover .front-2,
+.container:hover .front-3,
+.container:hover .back,
+.container:hover .back-2,
+.container:hover .back-3  {
   transition: transform 1.0s cubic-bezier(0.4, 0.2, 0.2, 1);
 }
 
 .front {
-  background-image: url("../../assets/Logo 2.png");
+  background-image: url("../../assets/KW Project.png");
+  background-size: cover;
 }
 
-.back {
+.front-2 {
+  background-image: url("../../assets/CT Project.png");
+  background-size: cover;
+}
+
+.front-3 {
+  background-image: url("../../assets/Logo 2.png");
+  background-size: cover;
+}
+
+
+.back ,
+.back-2,
+.back-3{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-.inner {
+.inner, .inner-2 , .inner-3{
   transform: translateY(-50%) translateZ(60px) scale(0.94);
   top: 50%;
   position: absolute;
@@ -95,24 +122,36 @@
 }
 
 .container .back,
-.container:hover .front {
+.container .back-2,
+.container .back-3,
+.container:hover .front,
+.container:hover .front-2,
+.container:hover .front-3 {
   transform: rotateY(180deg);
   transform-style: preserve-3d;
 }
 
 .container .front,
-.container:hover .back {
+.container:hover .back,
+.container .front-2,
+.container:hover .back-2,
+.container .front-3,
+.container:hover .back-3 {
   transform: rotateY(0deg);
   transform-style: preserve-3d;
 }
 
-.front .inner p {
+.front .inner p,
+.front-2 .inner-2 p,
+.front-3 .inner-3 p {
   font-size: 2rem;
   margin-bottom: 2rem;
   position: relative;
 }
 
-.front .inner p:after {
+.front .inner p:after,
+.front-2 .inner-2 p:after,
+.front-3 .inner-3 p:after {
   content: "";
   width: 4rem;
   height: 2px;
@@ -125,11 +164,14 @@
   bottom: -0.75rem;
 }
 
-.front .inner span {
+.front .inner span,
+.front-2.inner-2 span,
+.front-3.inner-3 span  {
   color: rgba(255, 255, 255, 0.7);
   font-family: "Montserrat";
-  font-weight: 300;
+  font-weight: 200;
 }
+
 .buttons-container {
   display: flex;
   justify-content: space-between;
@@ -145,6 +187,12 @@
   .card {
     width: calc(33.33% - 2rem);
   }
+
+  .inner,
+  .inner-2,
+  .inner-3 {
+    padding: 1rem; 
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -156,5 +204,11 @@
 @media only screen and (max-width: 480px) {
   .card {
     width: 100%;
+  }
+
+  .inner,
+  .inner-2,
+  .inner-3 {
+    padding: 0.5rem; 
   }
 }

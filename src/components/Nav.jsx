@@ -5,7 +5,7 @@ import "./Nav.css";
 
 export const Nav = () => {
 
-  const [menuOpen, setMenuOpen] =useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNavbarColor = () => {
@@ -14,17 +14,14 @@ export const Nav = () => {
     } else {
       setScrollNav(false);
     }
- };
+  };
 
- useEffect(() => {
+  useEffect(() => {
     window.addEventListener('scroll', changeNavbarColor);
- }, []);
+  }, []);
 
-  return    <nav className={scrollNav ? 'nav-scroll' : ''}>
-
-    <a className="title">
-   
-      Portfolio</a>
+  return <nav className={scrollNav ? 'nav-scroll' : ''}>
+    <img src="src/assets/logo.png" alt="Logo" className="logo" />
     <div className='menu' onClick={() => {
       setMenuOpen(!menuOpen);
     }}
@@ -37,19 +34,19 @@ export const Nav = () => {
 
     <ul className={menuOpen ? "open" : ""}>
       <li>
-      <a href='/'>Home</a>
+        <a href='/'>Home</a>
       </li>
 
       <li>
-      <a href='#about'>About</a>
+        <a href='#about'>About</a>
       </li>
 
       <li>
-      <a href='#projects'>Projects</a>
+        <a href='#projects'>Projects</a>
       </li>
 
       <li>
-      <a href='/'>Contact</a>
+        <a href='/'>Contact</a>
       </li>
 
     </ul>
