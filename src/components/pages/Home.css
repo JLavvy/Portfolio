@@ -26,8 +26,11 @@
 }
 
 .introname {
-    color: rgba(0, 255, 255, 0.8);
+    color: rgba(11, 12, 12, 0.8);
     
+}
+.introtext{
+    font-size: 1.0;
 }
 
 .intropara {
