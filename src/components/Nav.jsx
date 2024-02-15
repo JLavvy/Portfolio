@@ -21,7 +21,7 @@ export const Nav = () => {
   }, []);
 
   return <nav className={scrollNav ? 'nav-scroll' : ''}>
-    <img src="src/assets/logo.png" alt="Logo" className="logo" />
+    <img src="/logo.png" alt="Logo" className="logo" />
     <div className='menu' onClick={() => {
       setMenuOpen(!menuOpen);
     }}

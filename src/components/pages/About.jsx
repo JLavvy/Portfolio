@@ -21,7 +21,7 @@ export const About = () => {
       <div className="about-container">
         <div className="about-profile">
           <img
-            src="./src/assets/Me.JPG"
+            src="/Me.JPG"
             alt="Profile Picture"
             className="about-pic"
           />
