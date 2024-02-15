@@ -5,7 +5,7 @@ import './About.css';
 export const About = () => {
   const downloadCV = () => {
     
-    const cvFilePath = 'src/assets/Curriculum Vitae.pdf';
+    const cvFilePath = '/Curriculum Vitae.pdf';
 
     // Open the CV in a new tab
     window.open(cvFilePath, '_blank');
