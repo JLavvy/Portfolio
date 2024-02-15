@@ -9,16 +9,16 @@ export const Stack = () => {
         <p className='stack-text'>Explore the technologies I work with:</p>
         <div className="tech-stack">
           <div className="tech-icon" id="html">
-            <img src="./src/assets/html.png" alt="HTML" />
+            <img src="/html.png" alt="HTML" />
           </div>
           <div className="tech-icon" id="css">
-            <img src="./src/assets/css.png" alt="CSS" />
+            <img src="/css.png" alt="CSS" />
           </div>
           <div className="tech-icon" id="javascript">
-            <img src="./src/assets/javascript.png" alt="JavaScript" />
+            <img src="/javascript.png" alt="JavaScript" />
           </div>
           <div className="tech-icon" id="react">
-            <img src="./src/assets/react.png" alt="React" />
+            <img src="/react.png" alt="React" />
           </div>
         </div>
 
