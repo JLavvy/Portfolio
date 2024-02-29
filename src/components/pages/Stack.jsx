@@ -2,6 +2,7 @@ import React from 'react'
 import "./Stack.css"
 
 export const Stack = () => {
+  
   return (
     <section id='stack'>
         <div className='skills'>

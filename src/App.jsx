@@ -5,7 +5,7 @@ import { Nav } from './components/Nav';
 import { Home } from './components/pages/Home';
 import { About} from './components/pages/About';
 import { Projects } from './components/pages/Projects';
-//import { Contact } from './components/pages/Contact';
+import { Contact } from './components/pages/Contact';
 import { Footer }from './components/Footer';
 import { Stack } from './components/pages/Stack';
 
@@ -20,6 +20,7 @@ function App() {
       <Stack />
       <Projects /> 
      <br /> 
+     <Contact />
       <Footer />
 
     </div>

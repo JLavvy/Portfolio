@@ -1,5 +1,9 @@
 #about {
     flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
   }
   
   .about-text, .about-title {
@@ -14,7 +18,7 @@
   .about-container {
     display: flex;
     flex-direction: row; 
-    gap: 2rem; 
+    gap: 1rem; 
     align-items: center;
     justify-content: center;
     margin: 2rem; 
@@ -46,8 +50,8 @@
   }
   
   .details-container {
-    margin-top: 2rem;
-    background: white;
+    margin-top: 1rem;
+    background: #C5BAC4;
     border-radius: 1rem;
     border: 1px solid rgb(163, 163, 163); 
     text-align: center;
@@ -66,23 +70,21 @@
     height: auto;
   }
 
-
-  .button {
-    padding: 10px 20px;
-    width: 65px;
-    font-size: 16px;
-    background-color: white;
-    color: black;
-    border: 1px solid rgb(163, 163, 163);
-    border-radius: 50px;
-    cursor: pointer;
+  .download-button {
+    display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease; 
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #191D23;
+    color: white;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 5px;
+    cursor: pointer;
   }
   
-  .button:hover {
-    background-color: rgba(0, 255, 255, 0.8); 
+  .download-icon {
+    margin-right: 5px;
   }
   
   /* Media query for smaller screens */
@@ -100,6 +102,4 @@
       width: 100%;
       height: auto;
     }
- 
-  
   }
