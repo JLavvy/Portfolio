@@ -42,7 +42,7 @@ export const Nav = () => {
       </li>
 
       <li>
-        <a href='#skills'>Skills</a>
+        <a href='#stack'>Skills</a>
       </li>
 
       <li>
