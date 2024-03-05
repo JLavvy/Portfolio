@@ -22,8 +22,9 @@ export const Home = () => {
           <Fade direction="left" triggerOnce cascade>
             <p className="intropara">
               👋 Hey there, I'm a Junior Front End Developer with a strong foundation in HTML, CSS, and JavaScript.
+              <br />
               I'm enthusiastic about creating user-friendly web experiences
-              <br />and always eager to explore new ways to innovate. Let's build something amazing together! 🚀
+              and always eager to explore new ways to innovate. Let's build something amazing together! 🚀
             </p>
           </Fade>
 
@@ -34,19 +35,21 @@ export const Home = () => {
           <br />
           <br />
 
-          <div className="social-icons">
-            <a href="https://github.com/JLavvy" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="icon" />
-            </a>
-            <a href="https://twitter.com/JLavoga" target="_blank" rel="noopener noreferrer">
-              <FaTwitter className="icon" />
-            </a>
-            <a href="https://www.linkedin.com/in/janice-lavoga-929805223" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="icon" />
-            </a>
-            <a href="mailto:lavogajanyce@gmail.com" target="_blank" rel="noopener noreferrer">
-              <FaEnvelope className="icon" />
-            </a>
+          <div className="social-icons-wrapper">
+            <div className="social-icons">
+              <a href="https://github.com/JLavvy" target="_blank" rel="noopener noreferrer">
+                <FaGithub className="icon-1" />
+              </a>
+              <a href="https://twitter.com/JLavoga" target="_blank" rel="noopener noreferrer">
+                <FaTwitter className="icon-2" />
+              </a>
+              <a href="https://www.linkedin.com/in/janice-lavoga-929805223" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="icon-3" />
+              </a>
+              <a href="mailto:lavogajanyce@gmail.com" target="_blank" rel="noopener noreferrer">
+                <FaEnvelope className="icon-4" />
+              </a>
+            </div>
           </div>
 
         </div>

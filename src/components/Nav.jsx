@@ -9,7 +9,7 @@ export const Nav = () => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNavbarColor = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 40) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
