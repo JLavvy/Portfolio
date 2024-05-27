@@ -5,8 +5,8 @@ import './About.css';
 export const About = () => {
   const downloadCV = () => {
 
-    const cvFilePath = '/Curriculum Vitae.pdf';
-
+    const cvFilePath = '/Lavoga Omoke Resume.pdf';
+    
     // Open the CV in a new tab
     window.open(cvFilePath, '_blank');
   };
