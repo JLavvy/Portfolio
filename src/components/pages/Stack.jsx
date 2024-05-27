@@ -16,7 +16,7 @@ export const Stack = () => {
             <img src="/css.png" alt="CSS" />
           </div>
           <div className="tech-icon" id="javascript">
-            <img src="/javascript.png" alt="JavaScript" />
+            <img src="C:\Users\lavog\OneDrive\Documents\GitHub\Portfolio\public\react.png" alt="JavaScript" />
           </div>
           <div className="tech-icon" id="react">
             <img src="/react.png" alt="React" />
